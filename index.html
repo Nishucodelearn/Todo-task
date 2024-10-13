@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BetterTODO</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="fix">Create your ToDo💻 and Enjoy😊</div>
+
+    <div class="todo_body" id="todo_body">
+      <!-- first div heading-->
+      <div class="task" id="task">
+        <h2 id="heading">Add Your task</h2>
+        <button id="task_btn" onclick="taskShow()">
+          Task
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="25"
+            fill="currentColor"
+            class="bi bi-plus"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+            />
+          </svg>
+        </button>
+      </div>
+      <p class="para">
+        Add your daily task or any specfic task according to your choice
+      </p>
+      <!-- second div   ***** input box -->
+      <div class="hide_inputArea" id="hide_inputArea">
+        <div class="flex_title_date">
+          <input type="text" id="title" placeholder="Enter your task Name" />
+          <input type="datetime-local" id="date" />
+        </div>
+        <input type="text" id="desc" placeholder="Detail" />
+
+        <!-- task submit btn -->
+        <button class="add_task" id="add_task" onclick="addTask()">Add</button>
+      </div>
+
+      <div class="userTodo" id="usertodo">
+        <!-- <div class="firsttodo">
+          <input type="text" id="userTitle" value=""/>
+          <input type="text" id="userdes" value="details"/>
+          <p class="userDate" id="userDate"></p>
+        </div> -->
+      </div>
+
+      <!-- show all todos -->
+      <button class="add_task" id="showTODO" onclick="showTODO()">Your List📝</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
